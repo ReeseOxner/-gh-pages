@@ -1,0 +1,291 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>no.</title>
+  
+  <script type='text/javascript' src='/js/lib/dummy.js'></script>
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+    
+    
+  
+    <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+
+    
+      <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+  
+  <style type='text/css'>
+	
+    body {
+    background-color: #000;
+	    overflow:hidden;
+
+}
+
+    .body1 {
+    background-color: #D83838;
+    border-color:#000;
+    border-style: solid;
+    border-width: 20px;
+    border-bottom-style: none;
+    padding: 10px;
+    height: 768px;
+    background-image: url('http://31.media.tumblr.com/04e6280b6b424d48dc49bf9d9ca0fb50/tumblr_ml4bojMSAX1s5jjtzo1_500.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    -webkit-transition: opacity 0.5s;
+       -moz-transition: opacity 0.5s;
+         -o-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+    bottom: 3em;
+    left: 10%;
+    right: 10%;
+   
+
+}
+.body2 {
+    background-color: #0094FF;
+    padding: 10px;
+    height: 768px;
+background-image: url('http://i.imgur.com/yXtJ3pG.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    
+    -webkit-transition: opacity 0.5s;
+       -moz-transition: opacity 0.5s;
+         -o-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+    bottom: 3em;
+    left: 10%;
+    right: 10%;
+border-color:#000;
+    border-style: solid;
+    border-width: 20px;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+.body3 {
+    background-color: #FF6A00;
+    padding: 10px;
+    height: 768px;
+border-color:#000;
+    border-style: solid;
+    border-width: 20px;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+.body4 {
+    background-color: #B6FF00;
+    padding: 10px;
+    height: 768px;
+border-color:#000;
+    border-style: solid;
+    border-width: 20px;
+    border-top-style: none;
+    border-bottom-style: none; }
+.body5 {
+    background-color: #7142FF;
+    padding: 10px;
+    height: 768px;
+border-color:#000;
+    border-style: solid;
+    border-width: 20px;
+    border-top-style: none;
+    border-bottom-style: solid;
+    
+}
+ h1 { 
+    font-family: Gochi Hand;
+    color: white;
+    font-size: 85px;
+}
+
+.body5 h1 {
+font-size: 45px;
+}
+
+nav {
+    background: rgba(15,40,48,0.05);
+    text-align: center;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+	font-family: 'Calibri', Arial;
+    color: #fff;
+}
+
+nav:hover {
+    background: rgba(15,40,48,0.4);
+    color: red;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #fff;
+}
+nav a[href="#top"]:before {
+    content: "Back to "
+}
+nav a:hover,
+nav a.selected {
+    color: #fff;
+    background: rgba(15,40,48,0.1);
+    -webkit-border-radius: 16px;
+       -moz-border-radius: 16px;
+            border-radius: 16px;
+    -webkit-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+       -moz-text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+       -moz-box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+            box-shadow: inset 1px 1px 2px rgba(15,40,48,0.1),  1px 1px 2px rgba(255,255,255,0.1);
+}
+nav a:visited {
+    color: #fff;
+}
+
+.badges {
+height: 292;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+th { 
+padding:20px;
+}
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+window.onload=function(){
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+}//]]>  
+
+
+
+$(window).keydown(function(e) {
+    e.preventDefault(); //prevent default arrow key behavior
+
+    var targetElement;
+    //down
+    if (e.keyCode == 40) {
+        $targetElement = $('.active').next('img');
+    }
+    //up
+    else if (e.keyCode == 38) {
+        $targetElement = $('.active').prev('img');
+    }
+    if (!$targetElement.length) {return;}
+    $('.active').removeClass('active');
+    $targetElement.addClass('active');
+
+    //scroll element into view    
+    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1000);
+});
+</script>
+
+
+</head>
+<body>
+  <nav><a href="#body1">♦</a><a href="#body2">♦</a><a href="#body3">♦</a> <a href="#body4">♦</a> <a href="#body5">♦</a></nav>
+
+    <div class="body1" id="body1">
+        <span style="padding:-left: 500px; float: right; margin: 0, auto; padding-top: 50px;"><h1>Hello incompotence. <br />
+            Now <s>please</s> leave. <br />
+<br />
+<center><a href="#body2"><img src="http://i.imgur.com/941kuXy.png" /></a></center>
+            </h1></span>
+    </div>
+    <div class="body2" id="body2" style="text-align: justify; line-height:-10px;"><center><h1>
+	You're still here? <br />
+	Has your stupidity, know no bounds?<br />
+<br />
+<center><a href="#body3"><img src="http://i.imgur.com/941kuXy.png" /></a></center></center>
+</h1></div>
+    <div class="body3" id="body3"><h1> <center> Fine. <br /> 
+You can bask in the glory of my <b>badges</b>. <br />
+<br />
+<center><a href="#body4"><img src="http://i.imgur.com/941kuXy.png" /></a></center></div>
+    <div class="body4" id="body4">
+
+<center><div id="badges"><table>
+    <tr>
+        <th><img src="http://i.imgur.com/VLgV6CW.png" /></th>
+        <th><img src="http://i.imgur.com/kf4OdiH.png" /></th>
+        <th><img src="http://i.imgur.com/yJRgMKU.png" /></th>
+    </tr>
+</table>
+</div>
+
+<h1 style="font-size: 69px;"> Quite impressive, No? Muhaha. Well, show yourself out. Out of a window hopefully. <br />
+<a href="#body5"><img src="http://i.imgur.com/941kuXy.png" /></a> 
+</center>
+</div>
+
+<div class="body5" id="body5" style="text-align: justify; line-height:-10px; font-size:30px;"><center><h1>
+The window wasn't an option? Fine. Visit one of these sites, I don't hate them... as much as I hate everything else.
+
+<table>
+    <tr>
+        <td><a href="https://diy.org/platypusbear"><img src="https://d3hv8qdd474bjn.cloudfront.net/lego_medium.jpg" /></a></td>
+        <td><a href="https://diy.org/dickgrayson"><img src="https://d3hv8qdd474bjn.cloudfront.net/narwhal_medium.jpg" /></a></td>
+        <td><a href="https://diy.org/brother817"><img src="https://d3hv8qdd474bjn.cloudfront.net/giant_rooster_medium.jpg" /></a></td>
+    </tr>
+    <tr>
+        <td><a href="https://diy.org/rainfall"><img src="https://d3hv8qdd474bjn.cloudfront.net/greifer_medium.jpg" /></a></td>
+        <td><img src="http://i.imgur.com/6ZWrGxM.png" /></td>
+        <td><img src="http://i.imgur.com/6ZWrGxM.png" /></td>
+    </tr>
+<tr>
+        <td><img src="http://i.imgur.com/6ZWrGxM.png" /></td>
+        <td><img src="http://i.imgur.com/6ZWrGxM.png" /></td>
+        <td><img src="http://i.imgur.com/6ZWrGxM.png" /></td>
+    </tr>
+    
+</table>
+</h1></center></div>
+  
+<div style="background-color: #000000;"> 
+
+
+
+</div>
+</body>
+
+
+</html>
